@@ -5,7 +5,7 @@ This project is a practice implementation of a digit recognition web application
 Built with **Vite，React, JavaScript, and TailwindCSS**, this project also involves preprocessing the MNIST dataset to train a custom model.
 
 > 🟢 The HandyPen is now live on Vercel!  
-> 👉 [Try it here](...)  
+> 👉 [Try it here](https://digit-recognition-three.vercel.app/)  
 
 ![HandyPen UI Preview](Readme_image/Website_interface.png)
 
