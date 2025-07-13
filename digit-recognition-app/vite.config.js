@@ -8,5 +8,5 @@ export default defineConfig({
     tailwindcss(),
   ],
   assetsInclude: ['**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg'],
-  base: process.env.VITE_BASE_URL || '/DigitRecognition',
+  base: './',
 })
