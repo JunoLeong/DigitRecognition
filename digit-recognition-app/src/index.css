@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.cat-message-bubble {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  padding: 0.5rem 0.75rem;
+  color: #333;
+  max-width: 220px;
+  font-size: 0.95rem;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 40%;
+  min-height: 72px;
+  
+  width: 200px;              /* Set fixed width instead of max-width */
+  min-width: 200px;          /* Ensure minimum width */
+  word-wrap: break-word;     /* Allow long words to break */
+  overflow-wrap: break-word; /* Modern property for word breaking */
+  white-space: normal;       /* Allow normal text wrapping */
+  line-height: 1.4;          /* Better line spacing */
+  
+}
+
+/* Optional: add a "tail" on the left of the bubble */
+.cat-message-bubble::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 20px;
+  border: 8px solid transparent;
+  border-right-color: #fff;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
