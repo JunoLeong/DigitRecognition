@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import HandyPenLogo from './assets/HandyPen.svg';
-import CatAvatar from './assets/cat.svg';
+import CatAvatar from './assets/Cat.svg';
 
 import * as tf from "@tensorflow/tfjs";
 
